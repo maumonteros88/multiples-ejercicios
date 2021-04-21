@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Veamos la contraseña</h1>
+    <div class="container">
+      <input id="pass" type="password" placeholder="ingrese contraseña" />
+      <button onclick="handleClick()">Haga click para descubrir</button>
+      <p id="mostrar"></p>
+    </div>
+    <script>
+      function handleClick() {
+        const password = document.getElementById("pass").value;
+        const mostrar = document.getElementById("mostrar");
+        mostrar.textContent = `La contraseña es: ${password}`;
+      }
+    </script>
+  </body>
+</html>

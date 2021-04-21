@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  border-style: solid;
+  border-color: aqua;
+  display: inline-block;
+  margin-left: 36%;
+  padding: 20px;
+}
+
+.container > ul > li {
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.link:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.link:-webkit-any-link {
+  text-decoration: none;
+}
+
+.link {
+  font-size: 20px;
+}
+
+.link:hover {
+  color: cadetblue;
+}
